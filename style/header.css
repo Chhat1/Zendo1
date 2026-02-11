@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif, Khmer OS Siemreap;
+}
+
+header{
+    height: 10vh;
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.2); */
+}
+
+header > #nav-top{
+    height: 60%;
+}
+
+header > #nav-bottom{
+    height: 40%;
+    font-family: "Titillium Web", sans-serif, Khmer OS Siemreap;
+    font-style: normal;
+    font-size: 17px;
+    color: rgb(149, 92, 92);
+    background-color: gainsboro;
+}
+.nav > .nav-item{
+    padding: 5px 15px;
+    transition: all 0.3s ease-in-out;
+}
+.nav > .nav-item:hover{
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.bi-search, .bi-bag, .bi-list{
+    cursor: pointer;
+}
+
+/* modal search */
+/* Mobile */
+@media screen and (max-width: 576px){
+    .offcanvas-top{
+        height: 23% !important;
+        width: 100%;
+    }
+    #nav-bottom{
+        font-size: 15px !important;
+    }
+    
+}
+
+/* Laptop up */
+
+@media screen and (min-width: 993px){
+    .offcanvas-top{
+        height: 25% !important;
+        width: 100%;
+    }
+    
+}
+
+
+
+
+/* Tablet */
+@media screen and (min-width: 577px) and (max-width: 992px){
+    .offcanvas{
+        width: 50% !important;
+    }
+    .offcanvas-top{
+        height: 18% !important;
+        width: 100% !important;
+    }
+}
+
