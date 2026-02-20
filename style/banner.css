@@ -1,47 +1,95 @@
-#banner-image{
+/* ================== Banner ================== */
+#banner-image {
     position: relative;
-    height: 70vh !important;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
 }
 
-#main-btn-shop{
+#banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Buttons container */
+#main-btn-shop {
     position: absolute;
     left: 50%;
-    top: 88%;
-    transform: translate(-50%, -50%);
+    bottom: 10%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* space between buttons */
 }
 
-
-
-.btn-shop{
+/* Button style */
+.btn-shop {
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    border: 3px solid #fff;
+    background: transparent;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-.btn-shop:hover{
-    box-shadow: 0px 5px 15px rgb(0,0,0,0.3);
-    transform: translateY(-5px)
+.btn-shop:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
 }
 
+/* ================== Responsive ================== */
 
-/* Phone */
-@media screen and (max-width: 576px){
-    #banner-image{
-        height: 30vh !important;
+/* Phones */
+@media screen and (max-width: 576px) {
+    #banner-image {
+        height: 30vh;
     }
-    .container-fluid{
-        margin-top: 1px;
+
+    #main-btn-shop {
+        bottom: 5%; /* closer to bottom for small screens */
+        gap: 0.5rem;
     }
-    .btn-shop{
-        margin-top: -10px;
-        padding: 5px !important;
-        font-size: 10px !important;
+
+    .btn-shop {
+        padding: 0.25rem 0.75rem;
+        font-size: 10px;
     }
 }
 
-/* tablet */
+/* Tablets */
+@media screen and (min-width: 577px) and (max-width: 993px) {
+    #banner-image {
+        height: 45vh;
+    }
 
-@media screen and (min-width: 577px) and (max-width: 993px){
-    #banner-image{
-        height: 40vh !important;
+    #main-btn-shop {
+        bottom: 8%;
+        gap: 0.75rem;
+    }
+
+    .btn-shop {
+        padding: 0.4rem 1rem;
+        font-size: 12px;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 994px) {
+    #banner-image {
+        height: 70vh;
+    }
+
+    #main-btn-shop {
+        bottom: 10%;
+        gap: 1rem;
+    }
+
+    .btn-shop {
+        padding: 0.5rem 1.5rem;
+        font-size: 14px;
     }
 }
