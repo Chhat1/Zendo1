@@ -12,6 +12,9 @@ header{
     
 }
 
+.offcanvas > .offcanvas-body{
+    font-weight: bolder;
+}
 header > #nav-top{
     height: 60%;
 }
