@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="./assets/image/Banner1.jpg">
     <!-- logo Company -->
     <link rel="stylesheet" href="./style/logo_company.css">
+    <!-- card -->
+    <link rel="stylesheet" href="./style/card.css">
     <style>
         /* Offcanvas sidebar link base style */
         .offcanvas-body .nav-link {
@@ -77,7 +79,7 @@
 
 <body>
 
-    <header class="container-fluid p-0">
+    <header class="container-fluid p-0 position-sticky top-0 z-3 bg-white">
 
         <!-- NAV TOP -->
         <nav id="nav-top" class="container navbar p-0">
@@ -85,10 +87,10 @@
             <!-- Desktop Menu -->
             <ul class="nav d-none d-lg-flex align-content-center">
                 <li class="nav-item">
-                    <a class="text-black nav-link fw-bold" href="#">នារី</a>
+                    <a class="text-black nav-link fw-bold" href="#women">នារី</a>
                 </li>
                 <li class="nav-item">
-                    <a class="text-black nav-link fw-bold" href="#">បុរស</a>
+                    <a class="text-black nav-link fw-bold" href="#men">បុរស</a>
                 </li>
                 <li class="nav-item">
                     <a class="text-black nav-link fw-bold" href="#">ក្មេងប្រុស</a>
@@ -220,16 +222,16 @@
 
                 <!-- container-button -->
                 <div id="main-btn-shop" class="w-100 d-flex justify-content-center pb-4 pb-md-0">
-                    <button class="btn btn-shop border border-3 text-light fw-bold mx-2   py-md-2 px-md-4">SHOP
+                    <button class="btn btn-shop border border-3 text-light fw-bold mx-2  py-md-3 px-md-5">SHOP
                         MEN</button>
-                    <button class="btn btn-shop border border-3 text-light fw-bold mx-2   py-md-2 px-md-4">SHOP
+                    <button class="btn btn-shop border border-3 text-light fw-bold mx-2 py-md-3 px-md-5">SHOP
                         WOMEN</button>
                 </div>
             </div>
         </div>
 
         <!-- logo-company -->
-        <div class="container d-flex overflow-hidden overflow-x-scroll py-2 px-0">
+        <div class="container d-flex overflow-hidden overflow-x-scroll py-2 px-0 cursor">
             <img class=" logo-company"
                 src="https://zandokh.com/image/catalog/banner/2026/ZANDO/Brand Icon/Zando_Web-1.png" alt="logo">
             <img class=" logo-company"
@@ -272,16 +274,345 @@
         <!-- Best seller item -->
         <div class="container p-0">
             <!-- title -->
-            <h2 class="fw-bolder py-5">Best Seller items 🔥</h2>
-
+            <h2 id="title" class="fw-bolder py-5">Best Seller items 🔥</h2>
             <!-- main-card -->
-            <div class="container">
+            <div class="container row m-auto py-0 p-0">
+                <!-- Card -->
+                <div id="card" class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header p-0 position-relative">
+                            <img class="w-100 h-100 object-fit-cover "
+                                src="https://zandokh.com/image/cache/catalog/products/2026-01/2112509763/PTAK5573-cr-450x672.jpg"
+                                alt="">
+                            <button class="btn btn-danger py-0 fw-bolder px-2 position-absolute"
+                                style="left: 10px; top: 10px">-15%</button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="text-danger fw-bolder">USD $11.55 <del class="text-secondary fw-normal">USD
+                                        $17.59</del></h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart fs-5"></i>
+                            </div>
+                            <!-- Product title -->
+                            <h5>Regular Polo Shirt</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between py-3">
+                                <button class="btn btn-primary col-8">Add to Cart</button>
+                                <button class="btn btn-success">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card" class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header p-0 position-relative">
+                            <img class="w-100 h-100 object-fit-cover"
+                                src="https://zandokh.com/image/cache/catalog/products/2025-08/21225061302/ZANDO210820258739-cr-450x672.jpg"
+                                alt="">
+                            <button class="btn btn-danger py-0 fw-bolder px-2 position-absolute"
+                                style="left: 10px; top: 10px">-15%</button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="text-danger fw-bolder">USD $11.30 <del class="text-secondary fw-normal">USD
+                                        $22.59</del></h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart fs-5"></i>
+                            </div>
+                            <!-- Product title -->
+                            <h5>Wide Straight Denim Jean</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between py-3">
+                                <button class="btn btn-primary col-8">Add to Cart</button>
+                                <button class="btn btn-success">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card" class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header p-0 position-relative">
+                            <img class="w-100 h-100 object-fit-cover "
+                                src="https://zandokh.com/image/cache/catalog/products/2025-10/12225061418/TAKK9567-cr-450x672.jpg"
+                                alt="">
+                            <button class="btn btn-danger py-0 fw-bolder px-2 position-absolute"
+                                style="left: 10px; top: 10px">-15%</button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="text-danger fw-bolder">USD $7.77 <del class="text-secondary fw-normal">USD
+                                        $12.95</del></h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart fs-5"></i>
+                            </div>
+                            <!-- Product title -->
+                            <h5>Regular T-Shirts With Printed</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between py-3">
+                                <button class="btn btn-primary col-8">Add to Cart</button>
+                                <button class="btn btn-success">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card" class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header position-relative p-0">
+                            <img class="w-100 h-100 object-fit-cover "
+                                src="https://zandokh.com/image/cache/catalog/products/2026-01/22226011942/PTAK7436-cr-450x672.jpg"
+                                alt="">
+                            <button class="btn btn-danger py-0 fw-bolder px-2 position-absolute"
+                                style="left: 10px; top: 10px">-15%</button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="text-danger fw-bolder">USD $20.66 <del class="text-secondary fw-normal">USD
+                                        $22.95</del></h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart fs-5"></i>
+                            </div>
+                            <!-- Product title -->
+                            <h5>Wide Leg Denim Jeans</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between py-3">
+                                <button class="btn btn-primary col-8">Add to Cart</button>
+                                <button class="btn btn-success">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                <!-- card -->
-                <div class="bg-success" style="height: 450px; width: 350px">
-                    <img class="w-100 h-100"
-                        src="https://zandokh.com/image/cache/catalog/products/2026-01/2112509763/PTAK5573-cr-450x672.jpg"
-                        alt="">
+
+
+        <!-- Men product -->
+        <div id="men" class="container p-0">
+            <!-- title -->
+            <h2 id="title" class="fw-bolder py-5">Men Products 🔥</h2>
+            <!-- main-card -->
+            <div class="container row m-auto py-0 p-0">
+                <!-- Card -->
+                <div id="card" class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header position-relative p-0">
+                            <img class="w-100 h-100 object-fit-cover "
+                                src="https://zandokh.com/image/cache/catalog/products/2026-01/2112509763/PTAK5573-cr-450x672.jpg"
+                                alt="">
+                            <button class="btn btn-danger py-0 fw-bolder px-2 position-absolute"
+                                style="left: 10px; top: 10px">-15%</button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="text-danger fw-bolder">USD $11.55 <del class="text-secondary fw-normal">USD
+                                        $17.59</del></h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart fs-5"></i>
+                            </div>
+                            <!-- Product title -->
+                            <h5>Regular Polo Shirt</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between py-3">
+                                <button class="btn btn-primary col-8">Add to Cart</button>
+                                <button class="btn btn-success">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card" class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header position-relative p-0">
+                            <img class="w-100 h-100 object-fit-cover "
+                                src="https://zandokh.com/image/cache/catalog/products/2026-02/21225121545/PTAK6516-cr-450x672.jpg"
+                                alt="">
+                            <button class="btn btn-danger py-0 fw-bolder px-2 position-absolute"
+                                style="left: 10px; top: 10px">-15%</button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="text-danger fw-bolder">USD $15.30 <del class="text-secondary fw-normal">USD
+                                        $22.59</del></h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart fs-5"></i>
+                            </div>
+                            <!-- Product title -->
+                            <h5>Regular Shirt</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between py-3">
+                                <button class="btn btn-primary col-8">Add to Cart</button>
+                                <button class="btn btn-success">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card" class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header position-relative p-0">
+                            <img class="w-100 h-100 object-fit-cover "
+                                src="https://zandokh.com/image/cache/catalog/products/2026-01/21225091540/8-cr-450x672.jpg"
+                                alt="">
+                            <button class="btn btn-danger py-0 fw-bolder px-2 position-absolute"
+                                style="left: 10px; top: 10px">-15%</button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="text-danger fw-bolder">USD $26.06 <del class="text-secondary fw-normal">USD
+                                        $29.95</del></h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart fs-5"></i>
+                            </div>
+                            <!-- Product title -->
+                            <h5>Cropped Jacket</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between py-3">
+                                <button class="btn btn-primary col-8">Add to Cart</button>
+                                <button class="btn btn-success">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card" class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header position-relative p-0">
+                            <img class="w-100 h-100 object-fit-cover "
+                                src="https://zandokh.com/image/cache/catalog/products/2026-01/4122507420/TAKK5933-cr-450x672.jpg"
+                                alt="">
+                            <button class="btn btn-danger py-0 fw-bolder px-2 position-absolute"
+                                style="left: 10px; top: 10px">-15%</button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="text-danger fw-bolder">USD $31.66 <del class="text-secondary fw-normal">USD
+                                        $40.95</del></h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart fs-5"></i>
+                            </div>
+                            <!-- Product title -->
+                            <h5>Knitted SweatShirt</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between py-3">
+                                <button class="btn btn-primary col-8">Add to Cart</button>
+                                <button class="btn btn-success">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Women Product -->
+        <div id="women" class="container p-0">
+            <!-- title -->
+            <h2 id="title" class="fw-bolder py-5">Women Products 🔥</h2>
+            <!-- main-card -->
+            <div class="container row m-auto py-0 p-0">
+                <!-- Card -->
+                <div id="card" class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header position-relative p-0">
+                            <img class="w-100 h-100 object-fit-cover "
+                                src="https://zandokh.com/image/cache/catalog/products/2026-02/12225122498/PTAK9124-cr-450x672.jpg"
+                                alt="">
+                            <button class="btn btn-danger py-0 fw-bolder px-2 position-absolute"
+                                style="left: 10px; top: 10px">-15%</button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="text-danger fw-bolder">USD $15.55 <del class="text-secondary fw-normal">USD
+                                        $19.59</del></h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart fs-5"></i>
+                            </div>
+                            <!-- Product title -->
+                            <h5>Regular Denim Shorts</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between py-3">
+                                <button class="btn btn-primary col-8">Add to Cart</button>
+                                <button class="btn btn-success">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card" class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header position-relative p-0">
+                            <img class="w-100 h-100 object-fit-cover "
+                                src="https://zandokh.com/image/cache/catalog/products/2026-02/12225122486/PTAK9033-cr-450x672.jpg"
+                                alt="">
+                            <button class="btn btn-danger py-0 fw-bolder px-2 position-absolute"
+                                style="left: 10px; top: 10px">-15%</button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="text-danger fw-bolder">USD $15.30 <del class="text-secondary fw-normal">USD
+                                        $25.59</del></h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart fs-5"></i>
+                            </div>
+                            <!-- Product title -->
+                            <h5>Bow-Tie Blouse</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between py-3">
+                                <button class="btn btn-primary col-8">Add to Cart</button>
+                                <button class="btn btn-success">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card" class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header position-relative p-0">
+                            <img class="w-100 h-100 object-fit-cover "
+                                src="https://zandokh.com/image/cache/catalog/products/2025-10/12225061418/TAKK9567-cr-450x672.jpg"
+                                alt="">
+                            <button class="btn btn-danger py-0 fw-bolder px-2 position-absolute"
+                                style="left: 10px; top: 10px">-15%</button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="text-danger fw-bolder">USD $7.77 <del class="text-secondary fw-normal">USD
+                                        $12.95</del></h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart fs-5"></i>
+                            </div>
+                            <!-- Product title -->
+                            <h5>Regular T-Shirts With Printed</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between py-3">
+                                <button class="btn btn-primary col-8">Add to Cart</button>
+                                <button class="btn btn-success">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card" class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header position-relative p-0">
+                            <img class="w-100 h-100 object-fit-cover "
+                                src="https://zandokh.com/image/cache/catalog/products/2026-01/22226011942/PTAK7436-cr-450x672.jpg"
+                                alt="">
+                            <button class="btn btn-danger py-0 fw-bolder px-2 position-absolute"
+                                style="left: 10px; top: 10px">-15%</button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="text-danger fw-bolder">USD $20.66 <del class="text-secondary fw-normal">USD
+                                        $22.95</del></h5>
+                                <!-- icon -->
+                                <i class="bi bi-heart fs-5"></i>
+                            </div>
+                            <!-- Product title -->
+                            <h5>Wide Leg Denim Jeans</h5>
+                            <!-- button -->
+                            <div class="d-flex justify-content-between py-3">
+                                <button class="btn btn-primary col-8">Add to Cart</button>
+                                <button class="btn btn-success">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

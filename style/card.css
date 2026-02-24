@@ -1,0 +1,9 @@
+#card{
+    height: 500px;
+}
+.card-header{
+    height: 70%;
+}
+.card-body{
+    height: 30%;
+}
