@@ -24,8 +24,8 @@ header > #nav-bottom{
     font-family: "Titillium Web", sans-serif, Khmer OS Siemreap;
     font-style: normal;
     font-size: 17px;
-    color: rgb(149, 92, 92);
-    background-color: gainsboro;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 .nav > .nav-item{
     padding: 5px 15px;
@@ -40,6 +40,65 @@ header > #nav-bottom{
     cursor: pointer;
 }
 
+
+.btn-register, .btn-login {
+    position: relative;
+    padding: 15px 35px;
+    background: #111; /* ពណ៌ផ្ទៃក្នុង */
+    color: #fff;
+    font-family: 'Inter', sans-serif, khmer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    border-radius:50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+/* បង្កើតផ្ទៃពណ៌រត់ពីក្រោយ */
+.btn-register::before, .btn-login::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+        #FFE5F1, #F042FF, #7226FF, #87F5F5, #FFE5F1
+    );
+    animation: rotate 3s linear infinite;
+    z-index: -2;
+}
+
+/* បង្កើតផ្ទៃខ្មៅគ្របពីលើដើម្បីឱ្យឃើញតែរង្វង់ពណ៌នៅគែម (Border) */
+.btn-register::after, .btn-login::after {
+    content: '';
+    position: absolute;
+    inset: 4px; /* កម្រាស់ Border */
+    background: #111;
+    border-radius: 50px;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+/* Animation បង្វិលពណ៌ */
+@keyframes rotate {
+    100% { transform: rotate(360deg); }
+}
+
+/* Effect ពេល Hover */
+.btn-register:hover, .btn-login:hover {
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(240, 66, 255, 0.6);
+}
+
+.btn-register:hover::after, .btn-login:hover::after {
+    background: transparent; /* ពេល Hover ឱ្យពណ៌ Gradient លោតពេញប៊ូតុង */
+}
 
 /* modal search */
 /* Mobile */

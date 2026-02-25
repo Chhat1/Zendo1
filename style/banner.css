@@ -31,7 +31,7 @@
     color: #fff;
     border: 3px solid #fff;
     background: transparent;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(61, 52, 63, 0.9);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -65,7 +65,7 @@
 
     .btn-shop {
         padding: 0.25rem 0.75rem;
-        font-size: 10px;
+        font-size: 10px !important;
     }
 
     #carosel-banner{
