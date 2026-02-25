@@ -79,4 +79,16 @@ header > #nav-bottom{
         width: 100% !important;
     }
 }
+/* បង្ខំឱ្យ Modal មកនៅខាងមុខគេបង្អស់ */
+.modal {
+    z-index: 9999 !important;
+    background: rgba(0, 0, 0, 0.5); /* បង្កើតពណ៌ខ្មៅស្រអាប់ដោយខ្លួនឯង */
+}
+
+/* បំបាត់ផ្ទាំងខ្មៅដែល Bootstrap បង្កើតមកដោយស្វ័យប្រវត្តិដែលបង្កបញ្ហា */
+.modal-backdrop {
+    display: none !important;
+}
+
+
 
