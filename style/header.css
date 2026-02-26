@@ -91,7 +91,7 @@ header > #nav-bottom{
 
 /* Effect ពេល Hover */
 .btn-register:hover, .btn-login:hover {
-    color: #fff;
+    color: #000000;
     transform: scale(1.02);
     box-shadow: 0 0 20px rgba(240, 66, 255, 0.6);
 }
