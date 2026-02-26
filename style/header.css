@@ -151,3 +151,34 @@ header > #nav-bottom{
 
 
 
+
+
+
+/* dark / light mode */
+/* កំណត់ពណ៌ Variables */
+:root {
+  --app-bg: #ffffff;
+  --app-text: #212529;
+}
+
+[data-theme="dark"] {
+  --app-bg: #121212;
+  --app-text: #f8f9fa;
+}
+
+/* អនុវត្តពណ៌ទៅលើ Body */
+body {
+  background-color: var(--app-bg) !important;
+  color: var(--app-text) !important;
+  transition: all 0.4s ease-in-out;
+}
+
+/* កែសម្រួល Modal ឱ្យស៊ីជាមួយ Theme */
+[data-theme="dark"] .modal-content {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+[data-theme="dark"] .btn-close {
+  filter: invert(1); /* ធ្វើឱ្យប៊ូតុងបិទ (X) ទៅជាពណ៌ស */
+}
