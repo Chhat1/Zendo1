@@ -113,6 +113,10 @@ header > #nav-bottom{
     .offcanvas-end{
         width: 100% !important;
     }
+    .info-bar{
+        
+        font-size: 13px !important;
+    }
 }
 
 /* Laptop up */
