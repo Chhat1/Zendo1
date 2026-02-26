@@ -27,7 +27,7 @@
         font-weight: bold;
     }
     .price-item {
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
     .price-heart > .bi-heart{
         font-size: 10px !important;
@@ -39,7 +39,7 @@
         height: 350px;
     }
     .btn-card{
-        margin-top: -15px;
+        margin-top: -20px;
     }
     .btn-card button {
         padding: 0px;
